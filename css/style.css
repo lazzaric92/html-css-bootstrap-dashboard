@@ -1,0 +1,54 @@
+:root {
+    --header-width: 50px;
+    --nav-height: 50px;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+main {
+    padding-top: calc(var(--nav-height) + 1rem);
+}
+
+header {
+    background-color: #12293f;
+    width: var(--header-width);
+}
+
+nav {
+    height: var(--nav-height);
+}
+
+nav a:link,
+nav a:visited {
+    color: black;
+}
+
+.dropdown i {
+    color: #ff8f00;
+}
+
+/* ** STYLE */
+main {
+    background-color: burlywood;
+}
+
+.my_bg-lightblue {
+    background-color: #1b72e8;
+}
+
+
+/* || MEDIA QUERIES */
+/* ! almeno 768px di larghezza */
+
+/* ! almeno 992px di larghezza */
+@media screen and (min-width: 992px){
+    :root{
+        --header-width: 150px
+    }
+}
+
+
+/* ! almeno 1200px di larghezza */
