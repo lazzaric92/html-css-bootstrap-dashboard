@@ -1,5 +1,5 @@
 :root {
-    --header-width: 50px;
+    --header-width: 60px;
     --nav-height: 50px;
 }
 
@@ -9,9 +9,14 @@ body{
 
 header,
 main {
-    padding-top: calc(var(--nav-height) + 1rem);
+    padding-top: var(--nav-height);
 }
 
+.my_tag {
+    font-size: .8rem;
+}
+
+/* || HEADER */
 header {
     background-color: #12293f;
     width: var(--header-width);
@@ -19,6 +24,18 @@ header {
 
 nav {
     height: var(--nav-height);
+}
+
+.navbar-brand {
+    width: 75px;
+}
+
+nav input {
+    background-color: #e5e5e5;
+}
+
+.header_nav li i{
+    width: 2rem;
 }
 
 nav a:link,
@@ -30,6 +47,12 @@ nav a:visited {
     color: #ff8f00;
 }
 
+/* || MAIN */
+#add-student {
+    border-radius: 10px;
+    padding: 0 .8rem;
+}
+
 /* ** STYLE */
 main {
     background-color: burlywood;
@@ -37,6 +60,10 @@ main {
 
 .my_bg-lightblue {
     background-color: #1b72e8;
+}
+
+.my_bg-blue {
+    background-color: #165bba;
 }
 
 
@@ -47,6 +74,10 @@ main {
 @media screen and (min-width: 992px){
     :root{
         --header-width: 150px
+    }
+
+    .navbar-brand {
+        width: 175px;
     }
 }
 

@@ -19,8 +19,11 @@
     <div class="d-flex vw-100 vh-100">
         <header>
             <nav class="bg-white fixed-top d-flex align-items-center">
-                <a href="#" class="navbar-brand nav-link">boolean</a>
-                <input type="search" placeholder="Search" aria-label="Search" class="flex-grow-1 align-self-center">
+                <a href="#" class="navbar-brand px-3 me-0">
+                    <img src="img/mobile-logo.png" alt="Boolean logo" class="img-fluid d-lg-none">
+                    <img src="img/logo.svg" alt="Boolean logo" class="d-none d-lg-inline-block">
+                </a>
+                <input type="search" placeholder=" &#xf002;   Prova a cercare: Lezioni di Laravel" style="font-family:Roboto, sans-serif, FontAwesome" aria-label="Search" class="flex-grow-1 rounded border py-1">
                 <ul class="list-unstyled mb-0 d-flex align-items-center">
                     <li class="d-none d-lg-inline-block">
                         <a href="#" class="ms-3">
@@ -50,39 +53,39 @@
                 </ul>
             </nav>
 
-            <div class="header_nav h-100 d-flex flex-column justify-content-between align-items-center align-items-lg-start">
-                <ul class="list-unstyled">
-                    <li class="ps-3 mb-3" role="button">
+            <div class="header_nav h-100 d-flex flex-column justify-content-between align-items-center align-items-lg-start pt-4 pb-1">
+                <ul class="list-unstyled w-100">
+                    <li class="d-flex mb-3 ps-3" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-house"></i>
                         </a>
-                        <span class="d-none d-lg-inline-block text-white ms-2">
+                        <span class="d-none d-lg-inline-block text-white">
                             Home
                         </span>
                     </li>
-                    <li class="ps-3 mb-3" role="button">
+                    <li class="d-flex ps-3 mb-3" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-chart-simple"></i>
                         </a>
-                        <span class="d-none d-lg-inline-block text-white ms-3">
+                        <span class="d-none d-lg-inline-block text-white">
                             Stats
                         </span>
                     </li>
-                    <li class="ps-3" role="button">
+                    <li class="d-flex ps-3" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-signal"></i>
                         </a>
-                        <span class="d-none d-lg-inline-block text-white ms-2">
+                        <span class="d-none d-lg-inline-block text-white">
                             Signals
                         </span>
                     </li>
                 </ul>
                 <ul class="list-unstyled">
-                    <li class="ps-3" role="button">
+                    <li class="d-flex ps-3" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-gear"></i>
                         </a>
-                        <span class="d-none d-lg-inline-block text-white ms-2">
+                        <span class="d-none d-lg-inline-block text-white">
                             Admin
                         </span>
                     </li>
@@ -91,7 +94,31 @@
         </header>
     
         <main class="overflow-auto w-100">
-            <section class="my_bg-lightblue ">
+            <section class="my_bg-lightblue text-white pt-4">
+                <div class="container-fluid">
+                    <div class="row d-flex">
+                        <div class="col-12 col-md-4 col-lg-3 order-md-1">
+                            <span>Nuovo Studente</span>
+                            <button id="add-student" class="bg-transparent border border-white text-white fs-3 align-middle ms-3">+</button>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <p class="d-inline-block fs-3 mb-0">Boolean</p>
+                            <span class="my_tag my_bg-blue rounded-pill p-1">Piano blaze</span>
+                            <p>
+                                <span class="my_tag my_bg-blue rounded-pill p-1">3app</span>
+                                >>
+                                <span class="my_tag my_bg-blue rounded-pill p-1 d-lg-none">+</span>
+                                <span class="my_tag my_bg-blue rounded-pill p-1 d-none d-lg-inline-block">Boolean mobile app</span>
+                                <span class="my_tag my_bg-blue rounded-pill p-1 d-none d-lg-inline-block">Boolean web app</span>
+                                <span class="my_tag my_bg-blue rounded-pill p-1 d-none d-lg-inline-block">Boolean blog app</span>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            <p class="fs-3">125</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
