@@ -47,6 +47,10 @@ nav a:visited {
     color: #ff8f00;
 }
 
+.dropdown-toggle::after{
+    display: none;
+}
+
 /* || MAIN */
 #add-student {
     border-radius: 10px;
@@ -60,6 +64,18 @@ nav a:visited {
 
 .my_bg-blue {
     background-color: #165bba;
+}
+
+.my_bg-lightgrey {
+    background-color: #f7f7f7;
+}
+
+.my_bg-red {
+    background-color: #f16551;
+}
+
+.my_border-grey {
+    border-color: #d4d4d4;
 }
 
 

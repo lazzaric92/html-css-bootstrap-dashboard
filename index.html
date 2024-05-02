@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,9 +45,9 @@
                             <i class="fa-solid fa-bell"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -124,8 +124,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-8 pt-3">
-                        <section id="classes" class="bg-warning">
-                            <h2>Classes</h2>
+                        <section id="classes" class="border border-3 rounded border-warning mb-3">
+                            <p class="my_bg-lightgrey border-bottom border-2 my_border-grey fs-3 px-3 pb-2">Prossime Classi</p>
+                            <p>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut exercitationem repudiandae inventore commodi iusto asperiores, odit autem, fugiat culpa aliquam sed beatae quam dignissimos itaque! Repudiandae magnam labore quisquam.
                                 Tempore alias, eligendi ipsa sequi quos assumenda ratione veniam voluptas, quae commodi nisi exercitationem vitae similique corrupti maxime temporibus accusantium! Recusandae error voluptates dignissimos unde hic rem cum blanditiis fuga!
@@ -133,8 +134,9 @@
                             </p>
                         </section>
                     
-                        <section id="faq" class="bg-secondary">
-                            <h2>Faq</h2>
+                        <section id="faq" class="border border-3 rounded border-secondary mb-3">
+                            <p class="my_bg-lightgrey border-bottom border-2 my_border-grey fs-3 px-3 pb-2">F.A.Q.</p>
+                            <p>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut exercitationem repudiandae inventore commodi iusto asperiores, odit autem, fugiat culpa aliquam sed beatae quam dignissimos itaque! Repudiandae magnam labore quisquam.
                                 Tempore alias, eligendi ipsa sequi quos assumenda ratione veniam voluptas, quae commodi nisi exercitationem vitae similique corrupti maxime temporibus accusantium! Recusandae error voluptates dignissimos unde hic rem cum blanditiis fuga!
@@ -142,21 +144,47 @@
                             </p>
                         </section>
                     </div>
+
                     <div class="col-12 col-lg-4 pt-lg-3">
-                        <section id="todo" class="bg-success">
-                            <h2>Todo</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut exercitationem repudiandae inventore commodi iusto asperiores, odit autem, fugiat culpa aliquam sed beatae quam dignissimos itaque! Repudiandae magnam labore quisquam.
-                            </p>
+                        <section id="todo" class="border my_border-grey rounded-3 mb-3">
+                            <p class="my_bg-lightgrey border-bottom my_border-grey fs-3 px-3 pt-1 pb-2">Todo</p>
+                            <ul class="list-unstyled border my_border-grey rounded-3 mx-2 px-2">
+                                <li class="border-bottom my_border-grey py-2">
+                                    <input type="checkbox" name="todo-item" class="me-2">
+                                    <span>Kickoff nuove classi</span>
+                                </li>
+                                <li class="border-bottom my_border-grey py-2">
+                                    <input type="checkbox" name="todo-item" class="me-2">
+                                    <span>Lezione su Bootstrap 5 in classe #75</span>
+                                </li>
+                                <li class="py-2">
+                                    <input type="checkbox" name="todo-item" class="me-2">
+                                    <span>Controllare username github studenti</span>
+                                </li>
+
+                            </ul>
                         </section>
                     
-                        <section id="active-users" class="bg-danger">
-                            <h2>Users</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut exercitationem repudiandae inventore commodi iusto asperiores, odit autem, fugiat culpa aliquam sed beatae quam dignissimos itaque! Repudiandae magnam labore quisquam.
-                                Tempore alias, eligendi ipsa sequi quos assumenda ratione veniam voluptas, quae commodi nisi exercitationem vitae similique corrupti maxime temporibus accusantium! Recusandae error voluptates dignissimos unde hic rem cum blanditiis fuga!
-                                Provident quae dolore, dolorem voluptatum totam est perferendis atque explicabo non ipsa tenetur, minus eligendi inventore velit ullam! Suscipit ab odit veritatis maxime sapiente laudantium illum placeat aut deserunt aspernatur.
-                            </p>
+                        <section id="active-users" class="border rounded my_border-grey p-3 mb-3">
+                            <div class="border my_border-grey rounded">
+                                <img src="img/stats.jpeg" alt="stat graph" class="img-fluid">
+                                <p class="fs-4 px-3 mb-1">Utenti attivi</p>
+                                <p class="border-bottom my_border-grey fs-6 px-3 pb-2 mb-0">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="border-bottom my_border-grey p-2">
+                                        Gennaio: 1200
+                                    </li>
+                                    <li class="border-bottom my_border-grey p-2">
+                                        Febbraio: 800
+                                    </li>
+                                    <li class="border-bottom my_border-grey p-2">
+                                        Marzo: 1500
+                                    </li>
+                                    <li class="p-2">
+                                        <a href="#">Visualizza report approfondito</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </section>
                     </div>
                 </div>
