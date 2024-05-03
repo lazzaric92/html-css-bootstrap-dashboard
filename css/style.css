@@ -18,8 +18,9 @@ main {
 }
 
 header {
-    background-color: #12293f;
     width: var(--header-width);
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 nav {
@@ -53,8 +54,16 @@ nav a:visited {
 
 /* || MAIN */
 #add-student {
-    border-radius: 10px;
     padding: 0 .8rem;
+}
+
+#offcanvasAddForm {
+    width: 100%;
+}
+
+span.input-group-text,
+.form-control::file-selector-button {
+    background-color: #e9ecef;
 }
 
 #class-name {
@@ -78,13 +87,9 @@ table img {
     background-color: #f7f7f7;
 }
 
-.my_bg-red {
-    background-color: #f16551;
-}
-
 
 /* || MEDIA QUERIES */
-/* ! almeno 768px di larghezza */
+/* ! md - almeno 768px di larghezza */
 @media screen and (min-width: 768px) {
     #class-name {
         width: 40%;
@@ -92,7 +97,7 @@ table img {
 }
 
 
-/* ! almeno 992px di larghezza */
+/* ! lg - almeno 992px di larghezza */
 @media screen and (min-width: 992px){
     :root{
         --header-width: 150px
@@ -101,10 +106,14 @@ table img {
     .navbar-brand {
         width: 175px;
     }
+
+    #offcanvasAddForm {
+        width: 55%;
+    }
 }
 
 
-/* ! almeno 1200px di larghezza */
+/* ! xl - almeno 1200px di larghezza */
 @media screen and (min-width: 1200px) {
     #class-name {
         width: 55%;
@@ -112,7 +121,7 @@ table img {
 }
 
 
-/* ! almeno 1400px di larghezza */
+/* ! xxl - almeno 1400px di larghezza */
 @media screen and (min-width: 1400px) {
     #class-name {
         width: 60%;

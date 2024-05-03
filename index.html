@@ -99,18 +99,88 @@
                     <div class="row">
                         <div class="col-12 col-md-4 col-lg-3 order-md-1">
                             <span>Nuovo Studente</span>
-                            <button id="add-student" class="bg-transparent border border-white text-white fs-3 align-middle ms-3">+</button>
+                            <button id="add-student" class="btn btn-outline-light rounded-2 fs-3 ms-3" data-bs-toggle="offcanvas" href="#offcanvasAddForm" role="button" aria-controls="offcanvasAddForm">+</button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddForm" aria-labelledby="offcanvasAddFormLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title fw-normal" id="offcanvasAddFormLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="container">
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputName" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="inputName">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputLastname" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="inputLastname">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputEmail" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">@</span>
+                                                    <input type="email" class="form-control" id="inputEmail">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Scegli...</option>
+                                                    <option>Italia</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputPhoto" class="form-label">Foto</label>
+                                                <input type="file" class="form-control mb-3" id="inputPhoto">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck" role="button">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                         <div class="col-12 col-md-4 col-lg-6">
                             <p class="d-inline-block fs-3 mb-0">Boolean</p>
-                            <span class="my_tag my_bg-blue rounded-pill p-1">Piano blaze</span>
+                            <span class="my_tag my_bg-blue rounded-pill py-1 px-2 ms-1">Piano blaze</span>
                             <p>
-                                <span class="my_tag my_bg-blue rounded-pill p-1">3app</span>
+                                <span class="my_tag my_bg-blue rounded-pill py-1 px-2">3app</span>
                                 >>
-                                <span class="my_tag my_bg-blue rounded-pill p-1 d-lg-none">+</span>
-                                <span class="my_tag my_bg-blue rounded-pill p-1 d-none d-lg-inline-block">Boolean mobile app</span>
-                                <span class="my_tag my_bg-blue rounded-pill p-1 d-none d-lg-inline-block">Boolean web app</span>
-                                <span class="my_tag my_bg-blue rounded-pill p-1 d-none d-lg-inline-block">Boolean blog app</span>
+                                <span class="my_tag my_bg-blue rounded-pill py-1 px-2 d-lg-none">+</span>
+                                <span class="my_tag my_bg-blue rounded-pill py-1 px-2 d-none d-lg-inline-block">Boolean mobile app</span>
+                                <span class="my_tag my_bg-blue rounded-pill py-1 px-2 d-none d-lg-inline-block">Boolean web app</span>
+                                <span class="my_tag my_bg-blue rounded-pill py-1 px-2 d-none d-lg-inline-block">Boolean blog app</span>
                             </p>
                         </div>
                         <div class="col-12 col-md-4 col-lg-3">
