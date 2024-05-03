@@ -7,16 +7,16 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-header,
-main {
-    padding-top: var(--nav-height);
-}
-
 .my_tag {
     font-size: .8rem;
 }
 
 /* || HEADER */
+header,
+main {
+    padding-top: var(--nav-height);
+}
+
 header {
     background-color: #12293f;
     width: var(--header-width);
@@ -57,6 +57,14 @@ nav a:visited {
     padding: 0 .8rem;
 }
 
+#class-name {
+    width: 50%;
+}
+
+table img {
+    width: 30px;
+}
+
 /* ** STYLE */
 .my_bg-lightblue {
     background-color: #1b72e8;
@@ -77,6 +85,12 @@ nav a:visited {
 
 /* || MEDIA QUERIES */
 /* ! almeno 768px di larghezza */
+@media screen and (min-width: 768px) {
+    #class-name {
+        width: 40%;
+    }
+}
+
 
 /* ! almeno 992px di larghezza */
 @media screen and (min-width: 992px){
@@ -91,3 +105,16 @@ nav a:visited {
 
 
 /* ! almeno 1200px di larghezza */
+@media screen and (min-width: 1200px) {
+    #class-name {
+        width: 55%;
+    }
+}
+
+
+/* ! almeno 1400px di larghezza */
+@media screen and (min-width: 1400px) {
+    #class-name {
+        width: 60%;
+    }
+}
