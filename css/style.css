@@ -23,6 +23,10 @@ header {
     background-image: url(../img/sidebar-bg.png);
 }
 
+.header_nav ul li:hover {
+    background-color: rgba(229, 229, 229, 0.5);
+}
+
 nav {
     height: var(--nav-height);
 }

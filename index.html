@@ -61,7 +61,7 @@
 
             <div class="header_nav h-100 d-flex flex-column justify-content-between align-items-center align-items-lg-start pt-4 pb-1">
                 <ul class="list-unstyled w-100">
-                    <li class="d-flex mb-3 ps-3" role="button">
+                    <li class="d-flex mb-2 mx-2 px-1 py-2 text-center text-lg-start" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-house"></i>
                         </a>
@@ -69,7 +69,7 @@
                             Home
                         </span>
                     </li>
-                    <li class="d-flex ps-3 mb-3" role="button">
+                    <li class="d-flex mb-2 mx-2 px-1 py-2 text-center text-lg-start" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-chart-simple"></i>
                         </a>
@@ -77,7 +77,7 @@
                             Stats
                         </span>
                     </li>
-                    <li class="d-flex ps-3" role="button">
+                    <li class="d-flex mx-2 px-1 py-2 text-center text-lg-start" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-signal"></i>
                         </a>
@@ -86,8 +86,8 @@
                         </span>
                     </li>
                 </ul>
-                <ul class="list-unstyled">
-                    <li class="d-flex ps-3" role="button">
+                <ul class="list-unstyled w-100">
+                    <li class="d-flex mx-2 px-1 py-2 text-center text-lg-start" role="button">
                         <a href="#" class="text-decoration-none text-white">
                             <i class="fa-solid fa-gear"></i>
                         </a>
@@ -100,16 +100,18 @@
         </header>
     
         <main class="overflow-auto w-100">
-            <section id="main_header" class="my_bg-lightblue text-white pt-4">
+            <section id="main_header" class="my_bg-lightblue text-white pt-4 mb-2">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-4 col-lg-3 order-md-1 text-center">
-                            <span>Nuovo Studente</span>
-                            <button id="add-student" class="btn btn-outline-light rounded-2 fs-3 ms-3" data-bs-toggle="offcanvas" href="#offcanvasAddForm" role="button" aria-controls="offcanvasAddForm">+</button>
+                        <div class="col-12 col-md-4 col-lg-3 order-md-1 mb-3">
+                            <div class="text-md-center">
+                                <span>Nuovo Studente</span>
+                                <button id="add-student" class="btn btn-outline-light rounded-2 fs-3 ms-3" data-bs-toggle="offcanvas" href="#offcanvasAddForm" role="button" aria-controls="offcanvasAddForm">+</button>
+                            </div>
 
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddForm" aria-labelledby="offcanvasAddFormLabel">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title fw-normal" id="offcanvasAddFormLabel">Inserisci un nuovo studente</h5>
+                                    <h5 class="offcanvas-title fw-normal ms-2" id="offcanvasAddFormLabel">Inserisci un nuovo studente</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
@@ -198,7 +200,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-8 pt-3">
-                        <section id="classes" class="border rounded-3 mb-3">
+                        <section id="classes" class="border rounded-3 mb-4">
                             <p class="my_bg-lightgrey border-bottom rounded-top fs-4 px-3 pt-1 pb-2">Prossime Classi</p>
                             <div class="container">
                                 <table class="table table-hover align-middle mb-4">
@@ -443,7 +445,7 @@
                             </div>
                         </section>
                     
-                        <section id="faq" class="border rounded-3 mb-3">
+                        <section id="faq" class="border rounded-3 mb-4">
                             <p class="my_bg-lightgrey border-bottom rounded-top fs-4 px-3 pt-1 pb-2">F.A.Q.</p>
                             <p>
                             <div class="container">
@@ -484,7 +486,7 @@
                     </div>
 
                     <div class="col-12 col-lg-4 pt-lg-3">
-                        <section id="todo" class="border rounded-3 mb-3">
+                        <section id="todo" class="border rounded-3 mb-4">
                             <p class="my_bg-lightgrey border-bottom rounded-top fs-4 px-3 pt-1 pb-2">Todo</p>
                             <ul class="list-unstyled border rounded-3 mx-3 px-2">
                                 <li class="border-bottom py-2">
@@ -503,7 +505,7 @@
                             </ul>
                         </section>
                     
-                        <section id="active-users" class="border rounded p-3 mb-3">
+                        <section id="active-users" class="border rounded p-3 mb-4">
                             <div class="border rounded">
                                 <img src="img/stats.jpeg" alt="stat graph" class="img-fluid rounded-top">
                                 <p class="fs-5 px-3 mb-1">Utenti attivi</p>
