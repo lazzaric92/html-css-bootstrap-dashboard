@@ -23,7 +23,13 @@
                     <img src="img/mobile-logo.png" alt="Boolean logo" class="img-fluid d-lg-none">
                     <img src="img/logo.svg" alt="Boolean logo" class="d-none d-lg-inline-block">
                 </a>
-                <input type="search" placeholder=" &#xf002;   Prova a cercare: Lezioni di Laravel" style="font-family:Roboto, sans-serif, FontAwesome" aria-label="Search" class="flex-grow-1 rounded border py-1">
+                <div class="input-group flex-grow-1 rounded border d-flex">
+                    <span class="input-group-text border-0 overflow-hidden" role="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" class="border-0 rounded-end flex-grow-1 ps-2">
+                </div>
+                
                 <ul class="list-unstyled mb-0 d-flex align-items-center">
                     <li class="d-none d-lg-inline-block">
                         <a href="#" class="ms-3">
@@ -97,7 +103,7 @@
             <section id="main_header" class="my_bg-lightblue text-white pt-4">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-4 col-lg-3 order-md-1">
+                        <div class="col-12 col-md-4 col-lg-3 order-md-1 text-center">
                             <span>Nuovo Studente</span>
                             <button id="add-student" class="btn btn-outline-light rounded-2 fs-3 ms-3" data-bs-toggle="offcanvas" href="#offcanvasAddForm" role="button" aria-controls="offcanvasAddForm">+</button>
 
@@ -168,8 +174,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                         <div class="col-12 col-md-4 col-lg-6">
                             <p class="d-inline-block fs-3 mb-0">Boolean</p>
