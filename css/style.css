@@ -23,10 +23,6 @@ header {
     background-image: url(../img/sidebar-bg.png);
 }
 
-.header_nav ul li:hover {
-    background-color: rgba(229, 229, 229, 0.5);
-}
-
 nav {
     height: var(--nav-height);
 }
@@ -35,13 +31,16 @@ nav {
     width: 75px;
 }
 
-nav span.input-group-text,
-nav input {
+div.input-group {
     background-color: #e5e5e5;
 }
 
-.header_nav li i{
+.header_sidebar li i{
     width: 2rem;
+}
+
+.header_sidebar ul li:hover {
+    background-color: rgba(229, 229, 229, 0.5);
 }
 
 nav a:link,

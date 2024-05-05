@@ -17,17 +17,19 @@
 </head>
 <body>
     <div class="d-flex vw-100 vh-100">
+        <!-- || HEADER -->
         <header>
+            <!-- || Nav -->
             <nav class="bg-white fixed-top d-flex align-items-center">
                 <a href="#" class="navbar-brand px-3 me-0">
                     <img src="img/mobile-logo.png" alt="Boolean logo" class="img-fluid d-lg-none">
                     <img src="img/logo.svg" alt="Boolean logo" class="d-none d-lg-inline-block">
                 </a>
-                <div class="input-group flex-grow-1 rounded border d-flex">
-                    <span class="input-group-text border-0 overflow-hidden" role="button">
+                <div class="input-group flex-grow-1 flex-shrink-2 rounded border d-flex flex-nowrap">
+                    <span class="input-group-text bg-transparent border-0 overflow-hidden" role="button">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" class="border-0 rounded-end flex-grow-1 ps-2">
+                    <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" class="bg-transparent border-0 rounded-end flex-grow-1 ps-2 overflow-x-hidden">
                 </div>
                 
                 <ul class="list-unstyled mb-0 d-flex align-items-center">
@@ -59,7 +61,8 @@
                 </ul>
             </nav>
 
-            <div class="header_nav h-100 d-flex flex-column justify-content-between align-items-center align-items-lg-start pt-4 pb-1">
+            <!-- || Sidebar -->
+            <div class="header_sidebar h-100 d-flex flex-column justify-content-between align-items-center align-items-lg-start pt-4 pb-1">
                 <ul class="list-unstyled w-100">
                     <li class="d-flex mb-2 mx-2 px-1 py-2 text-center text-lg-start" role="button">
                         <a href="#" class="text-decoration-none text-white">
@@ -98,8 +101,10 @@
                 </ul>
             </div>
         </header>
-    
+        
+        <!-- || MAIN -->
         <main class="overflow-auto w-100">
+            <!-- || Main header -->
             <section id="main_header" class="my_bg-lightblue text-white pt-4 mb-2">
                 <div class="container-fluid">
                     <div class="row">
@@ -197,12 +202,13 @@
                 </div>
             </section>
 
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-8 pt-3">
+                        <!-- || Classes -->
                         <section id="classes" class="border rounded-3 mb-4">
                             <p class="my_bg-lightgrey border-bottom rounded-top fs-4 px-3 pt-1 pb-2">Prossime Classi</p>
-                            <div class="container">
+                            <div class="container-fluid">
                                 <table class="table table-hover align-middle mb-4">
                                     <thead>
                                         <tr>
@@ -444,11 +450,11 @@
                                 </table>
                             </div>
                         </section>
-                    
+                        <!-- || Faq -->
                         <section id="faq" class="border rounded-3 mb-4">
                             <p class="my_bg-lightgrey border-bottom rounded-top fs-4 px-3 pt-1 pb-2">F.A.Q.</p>
                             <p>
-                            <div class="container">
+                            <div class="container-fluid">
                                 <div class="accordion accordion-flush" id="faq-accordion">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -486,44 +492,50 @@
                     </div>
 
                     <div class="col-12 col-lg-4 pt-lg-3">
+                        <!-- || Todo -->
                         <section id="todo" class="border rounded-3 mb-4">
                             <p class="my_bg-lightgrey border-bottom rounded-top fs-4 px-3 pt-1 pb-2">Todo</p>
-                            <ul class="list-unstyled border rounded-3 mx-3 px-2">
-                                <li class="border-bottom py-2">
-                                    <input type="checkbox" name="todo-item" class="me-2">
-                                    <span>Kickoff nuove classi</span>
-                                </li>
-                                <li class="border-bottom py-2">
-                                    <input type="checkbox" name="todo-item" class="me-2">
-                                    <span>Lezione su Bootstrap 5 in classe #75</span>
-                                </li>
-                                <li class="py-2">
-                                    <input type="checkbox" name="todo-item" class="me-2">
-                                    <span>Controllare username github studenti</span>
-                                </li>
-
-                            </ul>
-                        </section>
-                    
-                        <section id="active-users" class="border rounded p-3 mb-4">
-                            <div class="border rounded">
-                                <img src="img/stats.jpeg" alt="stat graph" class="img-fluid rounded-top">
-                                <p class="fs-5 px-3 mb-1">Utenti attivi</p>
-                                <p class="border-bottom fs-6 px-3 pb-2 mb-0">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                                <ul class="list-unstyled mb-0">
-                                    <li class="border-bottom p-2">
-                                        Gennaio: 1200
+                            <div class="container-fluid">
+                                <ul class="list-unstyled border rounded-3 mx-2 px-2">
+                                    <li class="border-bottom py-2">
+                                        <input type="checkbox" name="todo-item" class="me-2">
+                                        <span>Kickoff nuove classi</span>
                                     </li>
-                                    <li class="border-bottom p-2">
-                                        Febbraio: 800
+                                    <li class="border-bottom py-2">
+                                        <input type="checkbox" name="todo-item" class="me-2">
+                                        <span>Lezione su Bootstrap 5 in classe #75</span>
                                     </li>
-                                    <li class="border-bottom p-2">
-                                        Marzo: 1500
+                                    <li class="py-2">
+                                        <input type="checkbox" name="todo-item" class="me-2">
+                                        <span>Controllare username github studenti</span>
                                     </li>
-                                    <li class="p-2">
-                                        <a href="#">Visualizza report approfondito</a>
-                                    </li>
+    
                                 </ul>
+                            </div>
+                            
+                        </section>
+                        <!-- || Active users -->
+                        <section id="active-users" class="border rounded py-3 px-2 mb-4">
+                            <div class="container-fluid">
+                                <div class="border rounded">
+                                    <img src="img/stats.jpeg" alt="stat graph" class="img-fluid rounded-top">
+                                    <p class="fs-5 px-3 mb-1">Utenti attivi</p>
+                                    <p class="border-bottom fs-6 px-3 pb-2 mb-0">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="border-bottom p-2">
+                                            Gennaio: 1200
+                                        </li>
+                                        <li class="border-bottom p-2">
+                                            Febbraio: 800
+                                        </li>
+                                        <li class="border-bottom p-2">
+                                            Marzo: 1500
+                                        </li>
+                                        <li class="p-2">
+                                            <a href="#">Visualizza report approfondito</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </section>
                     </div>
