@@ -5,6 +5,7 @@
 
 body{
     font-family: "Roboto", sans-serif;
+    min-width: 360px;
 }
 
 .my_tag {
@@ -112,7 +113,7 @@ table img {
     }
 
     #offcanvasAddForm {
-        width: 55%;
+        width: 45%;
     }
 }
 
